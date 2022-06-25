@@ -1,2 +1,62 @@
-<h1>News</h1>
-<p></p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .collapsible {
+  background-color: cyan;
+  color: red;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: cyan;
+  color: red;
+  text-align: center;
+}
+    </style>
+  </head>
+  <body>
+    <h1>News</h1>
+<p>Welcome to One Future Unified Team News. A news pages for One Future Unfied Team. A place to get the latest official announcement, news and updates of One Future Unified Team. Get all the latest awesome news released by the team here.</p>
+<button type="button" class="collapsible">Announcements</button>
+<div class="content">
+  <p>No announcements is available.</p>
+</div>
+<button type="button" class="collapsible">Updates</button>
+<div class="content">
+<p>No updates is available.</p>
+</div>
+<button type="button" class="collapsible">News</button>
+<div class="content">
+<p>No news is available.</p>
+</div>
+<button type="button" class="collapsible">All Articles</button>
+<div class="content">
+<p>No articles is available.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
