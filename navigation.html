@@ -1,115 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-* {
-  box-sizing: border-box;
-}
-
 body {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
 .navbar {
   overflow: hidden;
-  background-color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size:25.63px;
+  background-color: #333; 
 }
 
 .navbar a {
   float: left;
   font-size: 16px;
   color: white;
-  font-size:25.63px;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-.dropdown {
+.subnav {
   float: left;
   overflow: hidden;
+  text-align: center;
 }
 
-.dropdown .dropbtn {
+.subnav .subnavbtn {
   font-size: 16px;  
   border: none;
   outline: none;
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font: inherit;
+  font-family: inherit;
   margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .subnav:hover .subnavbtn {
   background-color: red;
 }
 
-.dropdown-content {
+.subnav-content {
   display: none;
   position: absolute;
-  background-color: black;
+  background-color: red;
   width: 100%;
-  left: 0;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  border-top: 6px solid white;
+  left: 0;
+  text-align: center;
 }
 
-.dropdown-content .header {
-  background: blue;
-  padding: 16px;
+.subnav-content a {
+  text-align: center;
   color: white;
-  text-align:center;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background-color: black;
-  height: 250px;
-  font-size:25.63px;
-}
-
-.column a {
-  float: none;
-  color: #0af54c;
-  padding: 16px;
   text-decoration: none;
+}
+
+.subnav:hover .subnav-content {
   display: block;
-  text-align: left;
 }
 
-.column p {
-color: #0af54c;
-}
-
-.column h3 {
-color: #0af54c;
-text-align: center;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    height: auto;
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
 }
 </style>
@@ -117,46 +76,41 @@ text-align: center;
 <body>
 
 <div class="navbar">
-  <a href="index.html">One Future Unified Team</a>
-  <div class="dropdown">
-    <button class="dropbtn"><i class="fa fa-bars"></i> 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <div class="header">
-        <h1>One Future Unified Team</h1>
-      </div>   
-      <div class="row">
-        <div class="column" style="height:100%;width:40%">
-          <h3>About</h3>
-          <p>One Future Unified Team is a small team based in Malaysia. One Future Unified Team is focused in many stuff from story writing until website development.<br><br>One Future Unified Team is founded from a group of young friends with an interest in technology.</p>
-        </div>
-        <div class="column" style="height:100%;">
-          <h3>Information</h3>
-          <a href="about.htmk">About</a>
+  <a href="index.html">OFUT</a>
+  <div class="subnav">
+    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="">One Future Unified Team is a small team based in Malaysia. One Future Unified Team is focused in many stuff from story writing until website development.<br><br>One Future Unified Team is founded from a group of young friends with an interest in technology.</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Information <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+          <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
           <a href="news.html">News</a>
           <a href="services.html">Services</a>
           <a href="team.html">Team</a>
-        </div>
-        <div class="column">
-          <h3>Community</h3>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Community <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
           <a href="community.html">Community</a>
           <a href="terms.html">Terms</a>
           <a href="donations.html">Donations</a>
-        </div>
-        <div class="column">
-          <h3>Teams</h3>
+    </div>
+  </div>
+    <div class="subnav">
+    <button class="subnavbtn">Teams <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
           <a href="https://one-future-unified-team.github.io/Staff/Website%20Development/">Development Team</a>
           <a href="https://one-future-unified-team.github.io/Staff/Studio/">Animation Studio</a>
-        </div>
-      </div>
     </div>
-  </div> 
+  </div>
 </div>
 
 <div style="padding:16px">
 </div>
-
 </body>
 </html>
