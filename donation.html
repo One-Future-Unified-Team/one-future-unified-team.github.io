@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="jestonjst" data-description="Support me on Buy me a coffee!" data-message="Thanks you for visiting. If you love our website and our services, please do consider to donate some to us." data-color="#26B0A1" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
     <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 <script>
@@ -11,9 +13,115 @@
     'floating-chat.donateButton.text-color': '#fff'
   });
 </script>
-  </head>
-  <body>
-    <h1>Donation</h1>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+  text-align: center;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  text-align: center;
+}
+
+.subnav-content a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">OFUT</a>
+  <div class="subnav">
+    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="">One Future Unified Team is a small team based in Malaysia. One Future Unified Team is focused in many stuff from story writing until website development.<br><br>One Future Unified Team is founded from a group of young friends with an interest in technology.</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Information <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="news.html">News</a>
+          <a href="services.html">Services</a>
+          <a href="team.html">Team</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Community <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+          <a href="community.html">Community</a>
+          <a href="terms.html">Terms</a>
+          <a href="donations.html">Donations</a>
+    </div>
+  </div>
+    <div class="subnav">
+    <button class="subnavbtn">Teams <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+          <a href="https://one-future-unified-team.github.io/Staff/Website%20Development/">Development Team</a>
+          <a href="https://one-future-unified-team.github.io/Staff/Studio/">Animation Studio</a>
+    </div>
+  </div>
+</div>
+
+<div style="padding:16px">
+<h1>Donation</h1>
 <p>One Future Unified Team is funded via many methods, one of the major methods used to fund One Future Unified Team is donations, which is from people like you. We do not sell any and all of our user data too so donation meant a lot to us, no matter if it is $1 or $5, it still matter a lot of us. Every single cents donated to us will be used directly in One Future Unified Team.
   
   <hr>
@@ -25,3 +133,6 @@
 <h2>Ko-Fi</h2>
 <p>One Future Unified Team also currently operates a Ko-Fi pages too! You could choose to donate us monthly or via monthly donation on Ko-Fi too. You could leave a public message to us on our Ko-Fi pages too. KO-fI currently charge a 5% fees for each monthly donation so we only received 95% of all monthly membership and 100% full-time donation. This page is owned by Jst Tan, team leader and owner of One Future Unified Team.</p>
     <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#28e035', 'R6R8BLGHG');kofiwidget2.draw();</script> 
+</div>
+</body>
+</html>
