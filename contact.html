@@ -1,9 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Contact</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZM4LK5K0LJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZM4LK5K0LJ');
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+.collapsible {
+  background-color: #f1f1f1;
+  color: red;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  color: red;
+}
+
+body {
+  padding: 25px;
+  background-color: white;
+  color: blue;
+  font-size: 17px;
+  text-align: center;
+}
+
+.dark-mode {
+  background-color: black;
+  color: cyan;
+}
+
+.red-mode {
+  background-color: red;
+  color: white;
+}
+
+.blue-mode {
+  background-color: blue;
+  color: cyan;
+}
+
+.green-mode {
+  background-color: green;
+  color: yellow;
+}
+
+.yellow-mode {
+  background-color: yellow;
+  color: green;
+}
+
+.orange-mode {
+  background-color: orange;
+  color: blue;
+}
+
+.purple-mode {
+  background-color: purple;
+  color: cyan;
+}
+
+.magenta-mode {
+  background-color: magenta;
+  color: cyan;
+}
+
+.button2 {
+float:left;
+background-color: black;
+  color: red;
+  padding: 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  color: yellow;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -72,9 +161,9 @@ body {
   }
 }
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
 <div class="navbar">
   <a href="index.html">OFUT</a>
   <div class="subnav">
@@ -110,7 +199,7 @@ body {
   </div>
 </div>
 
-<div style="padding:16px;text-align:center;color:red;">
+<div style="text-align:center;">
 <h1>Contacting Us</h1>
 <p>Unlike Facebook, Google and etc, we are open for everyone to contact us for any and all purposes. You could contact One Future Unified Team for many purposes, like support, feedback, bugs report, suggestion, donation, sponsorship and etc. Please do not contact us for promotion and spam through, we wouldn't send any replies to non-related email in my mailbox.</p>
 <p>One Future Unified Team is a busy indie team, we have very less members in our team, in fact only 3 members in the entirety of the team so it might take a while for the team to receive your message and send back a reply. We will try our best to reply each and all tickets as soon as possible too so please be patient. It would take us around 3 business days for us to reply too. We also only reply during our business hours via official platforms, which is listed below.</p>
@@ -119,5 +208,76 @@ body {
   <li><a href="https://twitter.com/OFUT2022">Twitter</a><br>Twitter is One Future Unified Team second social media platform. We post contents about announcements, updates and news in our official Twitter account too. You could also send us a message request to contacted us directly on Twitter for support, bugs report, feedback and suggestion.</li>
 </ul>
 </div>
+  <hr>
+<button type="button" class="collapsible"><h1>Themes</h1></button>
+<div class="content">
+<p>You could customise the themes of One Future Unified Team into a colour that you prefer. Select and choose from the color set below to make One Future Unified Team UI into your color preference.</p>
+<button onclick="myFunction()" style="background-color: black;" class="button2"></button>
+<button onclick="myFunction2()" style="background-color: red;" class="button2"></button>
+<button onclick="myFunction3()" style="background-color: blue;" class="button2"></button>
+<button onclick="myFunction4()" style="background-color: green;" class="button2"></button>
+<button onclick="myFunction5()" style="background-color: yellow;" class="button2"></button> 
+<button onclick="myFunction6()" style="background-color: orange;" class="button2"></button>
+<button onclick="myFunction7()" style="background-color: purple;" class="button2"></button>
+<button onclick="myFunction8()" style="background-color: magenta;" class="button2"></button>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
+function myFunction2() {
+   var element = document.body;
+   element.classList.toggle("red-mode");
+}
+
+function myFunction3() {
+   var element = document.body;
+   element.classList.toggle("blue-mode");
+}
+
+function myFunction4() {
+   var element = document.body;
+   element.classList.toggle("green-mode");
+}
+
+function myFunction5() {
+   var element = document.body;
+   element.classList.toggle("yellow-mode");
+}
+
+function myFunction6() {
+   var element = document.body;
+   element.classList.toggle("orange-mode");
+}
+
+function myFunction7() {
+   var element = document.body;
+   element.classList.toggle("purple-mode");
+}
+
+function myFunction8() {
+   var element = document.body;
+   element.classList.toggle("magenta-mode");
+}
+</script>
+
 </body>
 </html>
