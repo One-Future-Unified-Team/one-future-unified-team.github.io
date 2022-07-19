@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <title>Home</title>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZM4LK5K0LJ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -11,8 +11,88 @@
   gtag('config', 'G-ZM4LK5K0LJ');
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+.collapsible {
+  background-color: #f1f1f1;
+  color: red;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  color: red;
+}
+
+body {
+  padding: 25px;
+  background-color: white;
+  color: blue;
+  font-size: 17px;
+  text-align: center;
+}
+
+.dark-mode {
+  background-color: black;
+  color: cyan;
+}
+
+.red-mode {
+  background-color: red;
+  color: white;
+}
+
+.blue-mode {
+  background-color: blue;
+  color: cyan;
+}
+
+.green-mode {
+  background-color: green;
+  color: yellow;
+}
+
+.yellow-mode {
+  background-color: yellow;
+  color: green;
+}
+
+.orange-mode {
+  background-color: orange;
+  color: blue;
+}
+
+.purple-mode {
+  background-color: purple;
+  color: cyan;
+}
+
+.magenta-mode {
+  background-color: magenta;
+  color: cyan;
+}
+
+.button2 {
+float:left;
+background-color: black;
+  color: red;
+  padding: 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  color: yellow;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -81,9 +161,9 @@ body {
   }
 }
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
 <div class="navbar">
   <a href="index.html">OFUT</a>
   <div class="subnav">
@@ -119,41 +199,101 @@ body {
   </div>
 </div>
 
-<div style="padding:16px">
-<div style="padding:16px;text-align:center;">
-<div style="color:#0E9B5C">
+<div style="text-align:center;">
 <h1>One Future Unified Team</h1>
 <p>Welcome to One Future Unified Team main site! A 100% free place where privacy is the first important of everything.</p>
 <br><br>
-</div>
 <hr>
-<div style="color:#1B0FD1">
 <h2>About Us</h2>
 <p>One Future Unified Team is a small team based in Malaysia. One Future Unified Team is focused in many things, from web development to story writing. One Future Unified Team is founded from a group of young friends with an interest in technology.</p>
 <br>
-</div>
 <hr>
-<div style="color:#900FD1">
 <h2>Open Source</h2>
 <p>One Future Unified Team projects are fully open source. All of our codes is publicly available for everyone to use, read and study. We currently do not plans to have any closed source project. All of our source code is available in our Github organization. We also believe in that having our source code being publicly available create a transparent layer between our users and the team too.<br><br>With all of our projects open source, we also proritize privacy across all of our projects. We collects less users' data on our websites then any other websites. We didn't share or sold any of the data collected on our websites too and we keep each and all data securely in our database. We don't create a special virtual profile for each and all of our users.</p>
 <br>
-</div>
 <hr>
-<div style="color:#D10F9D">
 <h2>Free</h2>
 <p>All projects and services made and provided by One Future Unified Team is totally free of charges with no hidden cost. All of our services and projects is free to everyone including entrepenuer, business and poor people. Everyone deserve to use all of our privacy friendly projects and services anyway through. We do not included any paywall or premium in our services and websites.</p>
 <br>
 <hr>
-<div style="color:#D10F4B">
 <h2>Safe Environment</h2>
 <p>We would like to provide the 1st safest envinronment on the internet. One Future Unified Team tightly moderate each and all contents on our site. We also have a strict Community Guidelines to keep our community safe and clean. We also moderated each contents go through our site.</p>
 <br>
 <hr>
-<div style="color:#0F86D1">
 <h2>100% Uptime</h2>
 <p>Hate downtime when you needed to use a services? We got you covered here. All of our projects and services currently has a 100% uptime everyday. We also maintain and track to keep our site up everyday in the entire year. We also inform everyone as soon as possible when our site goes down.</p>
 <br>
 </div>
+  <hr>
+<button type="button" class="collapsible"><h1>Themes</h1></button>
+<div class="content">
+<p>You could customise the themes of One Future Unified Team into a colour that you prefer. Select and choose from the color set below to make One Future Unified Team UI into your color preference.</p>
+<button onclick="myFunction()" style="background-color: black;" class="button2"></button>
+<button onclick="myFunction2()" style="background-color: red;" class="button2"></button>
+<button onclick="myFunction3()" style="background-color: blue;" class="button2"></button>
+<button onclick="myFunction4()" style="background-color: green;" class="button2"></button>
+<button onclick="myFunction5()" style="background-color: yellow;" class="button2"></button> 
+<button onclick="myFunction6()" style="background-color: orange;" class="button2"></button>
+<button onclick="myFunction7()" style="background-color: purple;" class="button2"></button>
+<button onclick="myFunction8()" style="background-color: magenta;" class="button2"></button>
 </div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
+function myFunction2() {
+   var element = document.body;
+   element.classList.toggle("red-mode");
+}
+
+function myFunction3() {
+   var element = document.body;
+   element.classList.toggle("blue-mode");
+}
+
+function myFunction4() {
+   var element = document.body;
+   element.classList.toggle("green-mode");
+}
+
+function myFunction5() {
+   var element = document.body;
+   element.classList.toggle("yellow-mode");
+}
+
+function myFunction6() {
+   var element = document.body;
+   element.classList.toggle("orange-mode");
+}
+
+function myFunction7() {
+   var element = document.body;
+   element.classList.toggle("purple-mode");
+}
+
+function myFunction8() {
+   var element = document.body;
+   element.classList.toggle("magenta-mode");
+}
+</script>
+
 </body>
 </html>
